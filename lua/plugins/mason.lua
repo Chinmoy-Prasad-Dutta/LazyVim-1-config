@@ -1,5 +1,3 @@
-if true then return {} end
---ignored for now
 return {
   {
     "williamboman/mason.nvim",
@@ -11,9 +9,8 @@ return {
         "pylyzer",
         "python-lsp-server",
         "black",
-        "alex"
       }
     }
 
-  }
+  },
 }
