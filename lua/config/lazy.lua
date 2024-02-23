@@ -6,7 +6,13 @@ if not vim.loop.fs_stat(lazypath) then
     lazypath })
 end
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
-
+--------------
+-- require("config.globals")
+require("config.options")
+require("config.keymaps")
+require("config.autocmds")
+local plugins = "plugins"
+--------------------------
 require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
