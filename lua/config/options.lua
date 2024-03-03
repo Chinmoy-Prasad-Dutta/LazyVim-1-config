@@ -4,7 +4,7 @@
 local opt = vim.opt
 
 -- Tab / Indentation
-opt.tabstop = 2
+opt.tabstop = 4
 opt.shiftwidth = 2
 opt.softtabstop = 2
 opt.expandtab = true
@@ -15,7 +15,7 @@ opt.winbar = "%=%m %f"
 --------------------------
 opt.swapfile = false
 opt.backup = false
-opt.undodir = vim.fn.expand("~/.vim/undodir")
+opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 opt.undofile = true
 opt.splitright = true
 opt.splitbelow = true
